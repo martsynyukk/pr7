@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+window.onload = function() {
+  setTimeout(function() {
+    document.querySelector('body').classList.add('loaded');
+  }, 3000);
+}
+
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(27,26,23,0);">
+            <div class="container active">
+                <a class="navbar-brand" href="#"><p style="color: #3a5979;">// Сайт портфоліо</p></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Перемикач навігації">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="#aboutme">Про мене</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#skills">Стек</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#projects">Проєкти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#contact">Зв'язок зі мною</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me-section">
+
+
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-md-4 mb-4 col-12 align-items-center text-white about-me-info" id="aboutme">
+                        <p class="about-me-info-1">Марцинюк Олександр</p>
+                        <p class="about-me-info-2">React + Golang Developer</p>
+                        <p class="about-me-info-3">Втілюю новаторські проєкти для створення захоплюючих і зручних інтерфейсів, які зачаровують користувачів і забезпечують бездоганний технологічний досвід.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-6 mb-4 col-8 ">
+                        <div CLASS="about-me-code-bg">
+                        <img  style="border-radius: 1%"  src="images/coder.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="about-me-story-container">
+                <img src="images/softserve.png" class="about-me-story-img" alt="">
+                <p class="about-me-story">На даний момент займаю позицію Golang-розробника у компанії SoftServe</p>
+            </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <p class="skills-text">Стек технологій, які я використовую:</p>
+                <div class="cards">
+                    <div class="skill-card">
+                        <img src="images/html.png
+                        " alt="">
+                        <span><br>HTML5 & CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/js.png
+                        " alt="">
+                        <span><br>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img style="width: 128px" src="images/ts.png"  alt="">
+                        <span style="text-transform: none;"><br>TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img style="width: 128px" src="images/go.png"  alt="">
+                        <span><br>Go (Golang)</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/docker.png
+                        " alt="">
+                        <span><br>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <p class="works-text">Мої проєкти</p>
+                    <div class="row work-main">
+                        <div class="col-sm-4 col-md-4 mb-4 col-12 text-white work-card" style="background-image: url('images/Work-1.png'); ">
+                            <div class="work-text" style="background-color: rgba(33, 32, 29, 0.98); ">
+                                <p class="work-text-1">CRM-система</p>
+                                <p class="work-text-2">JS + TS, React, Golang, Docker</p>
+                                <p class="work-text-line"></p>
+                                <p class="work-text-4">Створено CRM-систему для моніторинга транзакцій </p>
+                                <a class="work-text-btn nav-link">Подивитися</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-4 mb-4 col-12 text-white work-card" style="background-image: url('images/Work-1.png'); ">
+                            <div class="work-text" style="background-color: rgba(33, 32, 29, 0.98); ">
+                                <p class="work-text-1">Аутентифікація</p>
+                                <p class="work-text-2">React + Golang</p>
+                                <p class="work-text-line"></p>
+                                <p class="work-text-4">Реалізована двухфакторна аутентифікація для користувачів</p>
+                                <a class="work-text-btn nav-link">Подивитися</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6 mb-6 col-12 text-white work-card" style="background-image: url('images/Work-1.png');">
+                            <div class="work-text" style="background-color: rgba(33, 32, 29, 0.98); ">
+                                <p class="work-text-1">NFT-проєкт</p>
+                                <p class="work-text-2">React, Golang, Docker</p>
+                                <p class="work-text-line"></p>
+                                <p class="work-text-4">Створений маркетплейс для продожу цифрових картинок.</p>
+                                <a class="work-text-btn nav-link">Подивитися</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-6 mb-6 col-12 text-white work-card" style="background-image: url('images/Work-1.png');">
+                            <a href=""></a>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+                <div class="row justify-content-evenly footer-main">
+                    <div class="col-sm-4 col-md-4 mb-4 col-8 text-white">
+                        <a class="navbar-brand" href="#"><p style="color:#3a5979;">(с) Марцинюк Олександр</p></a>
+
+                        <p class="footer-col-text-1">Якщо є якісь питання або просто хочете поспілкуватися, можете писати на електронну скриньку.</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 mb-4 col-8 align-items-center ">
+                        <p class="footer-col-text-2">Contacts</p>
+                        <p class="footer-col-text-mail">sasha@gmail.com</p>
+                        
+                        <p class="footer-col-text-git">
+                        <a href="https://github.com/">
+                            <img src="images/github.png" alt="">Мій GitHub профіль</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="preloader">
+        <div class="loader"></div>
+      </div>
+    <script src="script/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
